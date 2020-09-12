@@ -1,0 +1,38 @@
+
+<div class="item">
+  <h2>All Salads</h2>
+    <label>Sort by:</label>
+  <select
+  class="form-control"
+  id="sortby"
+  name="sortby"
+  (change)="onChangeSortBy($event.target.value)"
+  required
+>
+  <option  *ngFor="let item of sortby" [value]="item.State"
+  >{{ item.State }}</option
+  >
+</select>
+
+</div>
+ <div class="flex-layout"
+  fxLayout="row wrap"
+  fxLayout.lt-sm="column"
+  fxLayoutGap="12vw"
+  fxLayoutAlign="flex-start">
+<ng-container *ngFor="let item of salads">
+
+  <div class="flex-list" fxFlex="0 1 calc(33.3% - 32px)"
+  fxFlex.lt-md="0 1 calc(50% - 32px)"
+  fxFlex.lt-sm="100%">
+  <button>${{item.price}}</button>
+  <!-- (mouseover)="changeText=true" (mouseout)="changeText=false" -->
+  <a routerLink="/details/{{ item.id }}"><img src="{{item.image}}"></a>
+  <a routerLink="/details/{{ item.id }}"><h3>{{item.title }}</h3></a>
+  <p>{{item.ingredients }}</p>
+  <br>
+<!-- <button *ngIf="changeText == true">Add to cart</button> -->
+  </div>
+</ng-container>
+</div>
+

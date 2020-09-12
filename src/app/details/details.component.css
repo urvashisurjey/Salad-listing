@@ -1,0 +1,47 @@
+.card-image{
+float:left;
+width:35vw;
+height:65vh;
+background-color:#c8e9ca;
+margin: 10vh 10vw 10vh 10vw;
+border-radius: 10% ;
+}
+.card-content{
+  margin-top:3vh;
+}
+.card::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.card-content p{
+  font-size:1vw;
+  margin-right:4vw;
+  font-family:'Times New Roman', Times, serif;
+}
+.card-content h4{
+  font-weight: bold;
+}
+.card-image img{
+  margin:10vh 10vw 10vh 4vw;
+  height: 40vh;
+  width:25vw;
+  border-radius: 50%;
+}
+th {
+  font-weight: 400;
+  font-family:fantasy;
+  vertical-align: middle;
+  white-space: nowrap;
+  border-bottom: transparent;
+  background-color: rgb(12, 12, 12);
+  color: rgb(197, 194, 194);
+  font-size: 2vh;
+  text-align:center;
+  font-weight:bold;
+
+}
+td{
+    text-align: center;
+
+}

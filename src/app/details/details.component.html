@@ -1,0 +1,40 @@
+<div class="card">
+     <div class="card-image">
+       <!-- <img src="./assets/images/{{image_url}}" > -->
+       <img src="{{select_item_array.image}}">
+     </div>
+     <div class="card-content">
+          <h1>{{select_item_array.title | titlecase}}</h1>
+          <p>{{select_item_array.summary | titlecase}}</p>
+          <h1>${{select_item_array.price}} &nbsp;<small>{{select_item_array.serving}}/per savings</small></h1>
+          <br>
+          <h4>Consist:</h4>
+          <p>{{select_item_array.ingredients}}</p>
+          <br>
+          <h4>Nutrients:</h4>
+          <div class="table-responsive table-striped table-borderless" *ngIf="select_item_array.length != 0">
+            <table class="table table-hover">
+              <thead class="heading">
+                <tr>
+                  <th>Ttile</th>
+                  <th>Amount</th>
+                  <th>Unit</th>
+                  <th>Percentage of Daily needs</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of select_item_array.nutrition; index as i">
+                  <!-- <td>{{ i + 1 }}</td> -->
+                  <td>{{ item.title | titlecase }}</td>
+                  <td>{{ item.amount }}</td>
+                  <td>
+                    {{ item.unit }}
+                  </td>
+                  <td>{{ item.percentOfDailyNeeds }}</td>
+
+                </tr>
+              </tbody>
+            </table>
+          </div>
+    </div>
+</div>

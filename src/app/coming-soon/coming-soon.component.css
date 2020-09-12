@@ -1,0 +1,28 @@
+
+
+.bgimg {
+  background-image: url('/assets/images/coming-soon.jpg');
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: rgb(248, 244, 244);
+  font-family: "Courier New", Courier, monospace;
+  font-weight:bold;
+  font-size: 25px;
+}body, html {
+  height: 90%;
+  margin: 0;
+}
+
+
+
+.middle {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+

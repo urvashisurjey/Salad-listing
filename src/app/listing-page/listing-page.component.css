@@ -1,0 +1,30 @@
+
+.menu h1 {
+font-weight: bold;
+margin: 10vh 4vw 2vh 11vw
+}
+.menu ul{
+  list-style-type: none;
+  float: left;
+  margin-top: 1vh;
+  }
+  .nav-item{
+    padding:1vh;
+    margin-left: 3vw;
+  }
+  .menu{
+    background-image:url('/assets/images/background.jpg');
+    border-radius: 2vw 2vw 2vw 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    z-index: -1;
+  }
+  .menu a{
+    font-style:initial;
+    color: crimson;
+    text-decoration: none;
+    font-weight:bold;
+
+  }
+
+
