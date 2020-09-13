@@ -19,7 +19,7 @@
   /* border: 1px solid black; */
   border-radius: 1vw;
   width:35vw;
-  height:55vh;
+  height:60vh;
   position:relative;
 
 }
@@ -47,13 +47,17 @@
   width:13vw;
   background-color: #c8e9ca;
   border:0px;
-  outline:0px;
+  outline: none!important;
+
+}
+*:focus {
+  outline: none;
 }
 
 #sortby{
   border-radius: 20vw;
   text-align: center;
-  color:rgba(35, 102, 156, 0.767);
+  color:rgba(53, 112, 160, 0.945);
   font-weight: bold;
 }
 .flex-layout{
@@ -76,16 +80,29 @@ outline:none;
 
 }
 .flex-list #addtocartButton{
-margin-left:5vw;
+margin-left:4vw;
 margin-top:0vh;
 color:white;
 font-weight:bold;
 font-size: 1vw;
 background-color:crimson;
 border-radius: 10%;
-width:10vw;
+width:12vw;
+height:6vh;
 outline:none;
+float:left;
+border:none;
 
+}
+.flex-list #likeButton{
+float:right;
+margin-left:0vw;
+background-color:rgb(231, 223, 223);
+outline:none;
+border:none;
+width:3vw;
+height:6vh;
+border-radius: 20%;
 }
 
 

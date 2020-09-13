@@ -32,6 +32,7 @@
   <p>{{item.ingredients }}</p>
   <br>
 <button *ngIf="changeText == true && this.select_item_array.id==item.id" id="addtocartButton">Add to cart</button>
+<button id="likeButton" *ngIf="changeText == true && this.select_item_array.id==item.id"><i class="fa fa-heart-o"></i></button>
   </div>
 </ng-container>
 </div>
