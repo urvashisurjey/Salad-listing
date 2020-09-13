@@ -13,6 +13,7 @@ export class AllSaladComponent implements OnInit {
   changeText:any;
   selecteditem: number;
   select_item_array: any;
+  element: any;
   constructor() { }
   ngOnInit() {
     this.salads= data.salads;
@@ -80,5 +81,6 @@ if(ordering=='desc'){
 
     );
     this.select_item_array= this.salads[this.selecteditem]
+
   }
 }
