@@ -108,6 +108,10 @@ border-radius: 20%;
 .flex-layout :hover {
   background-color: #c8e9ca;
 }
+.my-pagination{
+margin-top:10vh;
+margin-left:60vw;
+}
 
 
 

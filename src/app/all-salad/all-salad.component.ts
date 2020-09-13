@@ -14,10 +14,13 @@ export class AllSaladComponent implements OnInit {
   selecteditem: number;
   select_item_array: any;
   element: any;
+  p: number;
   constructor() { }
   ngOnInit() {
     this.salads= data.salads;
     this.changeText=false;
+    this.p= 1;
+
     this.sortby = [
       {
         State: "Price: Low to high",

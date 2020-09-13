@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListingPageComponent } from './listing-page/listing-page.component';
@@ -30,7 +30,9 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
   imports: [
     BrowserModule,FlexLayoutModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxPaginationModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -20,7 +20,7 @@
   fxLayout.lt-sm="column"
   fxLayoutGap="12vw"
   fxLayoutAlign="flex-start">
-<ng-container *ngFor="let item of salads">
+<ng-container *ngFor="let item of salads | paginate: { itemsPerPage: 10, currentPage: p }">
 
   <div class="flex-list" fxFlex="0 1 calc(33.3% - 32px)"
   fxFlex.lt-md="0 1 calc(50% - 32px)"
@@ -35,6 +35,6 @@
 <button id="likeButton" *ngIf="changeText == true && this.select_item_array.id==item.id"><i class="fa fa-heart-o"></i></button>
   </div>
 </ng-container>
+
+<pagination-controls (pageChange)="p = $event" class="my-pagination"></pagination-controls>
 </div>
-
-
