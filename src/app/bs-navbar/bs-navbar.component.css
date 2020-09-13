@@ -19,9 +19,7 @@ margin-right:2vw;
 a{
   color: rgb(8, 3, 27);
   font-size: 1vw;
-}
-.first a:first-child{
-  text-decoration: underline;
+  text-decoration:none
 }
 .image-design{
 

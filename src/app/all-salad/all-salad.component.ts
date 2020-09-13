@@ -11,6 +11,8 @@ export class AllSaladComponent implements OnInit {
   sortby: any[];
   salads: any[];
   changeText:any;
+  selecteditem: number;
+  select_item_array: any;
   constructor() { }
   ngOnInit() {
     this.salads= data.salads;
@@ -29,7 +31,6 @@ export class AllSaladComponent implements OnInit {
         State: "Z-A"
       },
     ];
-
 this.sortByPrice('price','asc');
 }
   onChangeSortBy(paramSortBy){
@@ -72,5 +73,12 @@ if(ordering=='desc'){
     });
   }
   }
+  onHoverId(paramId){
+    this.salads= data.salads
+    this.selecteditem = this.salads.findIndex(
+      (obj) => obj.id == paramId
 
+    );
+    this.select_item_array= this.salads[this.selecteditem]
+  }
 }

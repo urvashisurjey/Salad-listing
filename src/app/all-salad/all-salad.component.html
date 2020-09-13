@@ -24,14 +24,14 @@
 
   <div class="flex-list" fxFlex="0 1 calc(33.3% - 32px)"
   fxFlex.lt-md="0 1 calc(50% - 32px)"
-  fxFlex.lt-sm="100%">
-  <button>${{item.price}}</button>
-  <!-- (mouseover)="changeText=true" (mouseout)="changeText=false" -->
+  fxFlex.lt-sm="100%" (mouseover)="onHoverId(item.id);changeText=true" (mouseout)="changeText=false">
+  <button id="priceButton">${{item.price}}</button>
+
   <a routerLink="/details/{{ item.id }}"><img src="{{item.image}}"></a>
   <a routerLink="/details/{{ item.id }}"><h3>{{item.title }}</h3></a>
   <p>{{item.ingredients }}</p>
   <br>
-<!-- <button *ngIf="changeText == true">Add to cart</button> -->
+<button *ngIf="changeText == true && this.select_item_array.id==item.id" id="addtocartButton">Add to cart</button>
   </div>
 </ng-container>
 </div>

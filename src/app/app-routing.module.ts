@@ -7,7 +7,7 @@ import { AllSaladComponent } from './all-salad/all-salad.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: "listing-page", pathMatch: "full" },
+  { path: "", redirectTo: "listing-page/allsalad", pathMatch: "full" },
 
   {
     path:"listing-page",

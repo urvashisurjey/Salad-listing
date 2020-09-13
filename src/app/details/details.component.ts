@@ -25,7 +25,7 @@ export class DetailsComponent implements OnInit {
 
     );
     this.select_item_array= this.salads[this.selecteditem]
-    console.log("Selected item"+JSON.stringify(this.select_item_array))
+    // console.log("Selected item"+JSON.stringify(this.select_item_array))
 
 
   }

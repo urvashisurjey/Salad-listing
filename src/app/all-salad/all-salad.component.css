@@ -19,7 +19,7 @@
   /* border: 1px solid black; */
   border-radius: 1vw;
   width:35vw;
-  height:50vh;
+  height:55vh;
   position:relative;
 
 }
@@ -45,12 +45,15 @@
   margin-top:1vh;
   height:5vh;
   width:13vw;
+  background-color: #c8e9ca;
+  border:0px;
+  outline:0px;
 }
 
 #sortby{
   border-radius: 20vw;
   text-align: center;
-  color:black;
+  color:rgba(35, 102, 156, 0.767);
   font-weight: bold;
 }
 .flex-layout{
@@ -58,7 +61,7 @@
   width:85vw;
   height:20vh;
 }
-.flex-list button {
+.flex-list #priceButton{
   background-color: crimson;
   color: white;
   border:none;
@@ -69,6 +72,18 @@
   font-size:1vw;
   cursor: pointer;
 border-radius: 60%;
+outline:none;
+
+}
+.flex-list #addtocartButton{
+margin-left:5vw;
+margin-top:0vh;
+color:white;
+font-weight:bold;
+font-size: 1vw;
+background-color:crimson;
+border-radius: 10%;
+width:10vw;
 outline:none;
 
 }
