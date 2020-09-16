@@ -81,7 +81,6 @@ if(ordering=='desc'){
     this.salads= data.salads
     this.selecteditem = this.salads.findIndex(
       (obj) => obj.id == paramId
-
     );
     this.select_item_array= this.salads[this.selecteditem]
 

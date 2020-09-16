@@ -18,14 +18,12 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit() {
     this.item_id = this.route.snapshot.paramMap.get("id");
-    console.log(this.item_id);
     this.salads= data.salads
     this.selecteditem = this.salads.findIndex(
       (obj) => obj.id == this.item_id
 
     );
     this.select_item_array= this.salads[this.selecteditem]
-    // console.log("Selected item"+JSON.stringify(this.select_item_array))
 
 
   }
